@@ -38,6 +38,8 @@
   </prerequisites>
 
   <properties>
+    <version.scala.binary>2.11</version.scala.binary>
+    <version.scala>${version.scala.binary}.5</version.scala>
     <version.maven>3.0.4</version.maven>
     <version.wagon>2.2</version.wagon>
   </properties>
