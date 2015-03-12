@@ -23,7 +23,7 @@
 
   <parent>
     <groupId>org.scalatra.scalate</groupId>
-    <artifactId>scalate-project_2.10</artifactId>
+    <artifactId>scalate-pom</artifactId>
     <version>1.7.1-SNAPSHOT</version>
   </parent>
 
@@ -34,12 +34,12 @@
   <description>A Scalate Maven Plugin</description>
 
   <prerequisites>
-    <maven>${maven-version}</maven>
+    <maven>${version.maven}</maven>
   </prerequisites>
 
   <properties>
-    <maven-version>3.0.0</maven-version>
-    <wagonVersion>2.2</wagonVersion>
+    <version.maven>3.0.4</version.maven>
+    <version.wagon>2.2</version.wagon>
   </properties>
 
   <dependencies>
@@ -47,14 +47,14 @@
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
-      <version>${scala-version}</version>
+      <version>${version.scala}</version>
       <scope>compile</scope>
     </dependency>
     
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-compiler</artifactId>
-      <version>${scala-version}</version>
+      <version>${version.scala}</version>
       <scope>compile</scope>
       <optional>false</optional>
     </dependency>
@@ -62,7 +62,7 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-nop</artifactId>
-      <version>${slf4j-version}</version>
+      <version>${version.slf4j}</version>
     </dependency>
 
     <!-- site deploy stuff -->
@@ -72,32 +72,31 @@
       <version>2.6</version>
     </dependency>
 
-    <!-- TODO I have no idea if this is right.  Can somebody qualified please take a look? -->
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-compat</artifactId>
-      <version>3.0</version> <!-- Was tied to maven-version, but 3.0.0 != 3.0 -->
+      <version>3.0.4</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.maven.wagon</groupId>
       <artifactId>wagon-provider-api</artifactId>
-      <version>${wagonVersion}</version>
+      <version>${version.wagon}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.wagon</groupId>
       <artifactId>wagon-file</artifactId>
-      <version>${wagonVersion}</version>
+      <version>${version.wagon}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.wagon</groupId>
       <artifactId>wagon-ssh</artifactId>
-      <version>${wagonVersion}</version>
+      <version>${version.wagon}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.wagon</groupId>
       <artifactId>wagon-http-lightweight</artifactId>
-      <version>${wagonVersion}</version>
+      <version>${version.wagon}</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.plexus</groupId>
