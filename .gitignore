@@ -1,0 +1,12 @@
+.idea/
+*.iml
+target/
+_scalate
+.project
+.classpath
+.settings
+.metadata
+eclipse-classes
+overlays
+.history
+.cache
