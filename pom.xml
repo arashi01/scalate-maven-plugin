@@ -27,11 +27,11 @@
     <version>1.7.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>maven-scalate-plugin_2.10</artifactId>
+  <artifactId>scalate-maven-plugin_2.10</artifactId>
   <packaging>maven-plugin</packaging>
 
-  <name>${project.artifactId}</name>
-  <description>A Scalate Maven Plugin</description>
+  <name>Scalate Maven Plugin</name>
+  <description>A Maven Plugin for pre-compiling Scalate template files.</description>
 
   <prerequisites>
     <maven>${version.maven}</maven>
