@@ -65,8 +65,6 @@ class SiteGenNoForkMojoSupport {
       val className = "org.fusesource.scalate.support.SiteGenerator"
       val generator = loader.loadClass(className).newInstance.asInstanceOf[SiteGenerator]
 
-      mojo.webappDirectory.mkdirs() // SiteGenerator throws if webappDirectory doesn't exist.
-
       generator.info = (value:String)=>getLog.info(value)
       generator.workingDirectory = mojo.workingDirectory
       generator.webappDirectory = mojo.webappDirectory
