@@ -55,9 +55,9 @@ public class SiteGenNoForkMojo extends AbstractMojo {
     File workingDirectory;
 
     /**
-     * The directory where the webapp is built.
+     * The directory where the website template files are located.
      *
-     * @parameter expression="${project.build.directory}/${project.build.finalName}"
+     * @parameter expression="${project.basedir}/src"
      */
     File webappDirectory;
 
